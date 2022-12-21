@@ -13,7 +13,7 @@
     "coverage": "jest --coverage",
     "build": "tsc",
     "prepublish": "tsc",
-    "build:docs": "documentation build -f html -o docs --github --parse-extension ts"
+    "build:docs": "documentation build src/index.ts -f html -o docs --github --parse-extension ts"
   },
   "repository": {
     "url": "https://github.com/LaSpruca/js-option",

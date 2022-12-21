@@ -26,6 +26,193 @@
           <div id='toc'>
             <ul class='list-reset h5 py1-ul'>
               
+                
+                <li><a
+                  href='#option'
+                  class=" toggle-sibling">
+                  Option
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  <ul class='list-reset py1-ul pl1'>
+                    <li class='h5'><span>Static members</span></li>
+                    
+                      <li><a
+                        href='#optionfrom'
+                        class='regular pre-open'>
+                        .from
+                      </a></li>
+                    
+                      <li><a
+                        href='#optionnone'
+                        class='regular pre-open'>
+                        .none
+                      </a></li>
+                    
+                    </ul>
+                  
+                  
+                    <ul class='list-reset py1-ul pl1'>
+                      <li class='h5'><span>Instance members</span></li>
+                      
+                      <li><a
+                        href='#optionunwrap'
+                        class='regular pre-open'>
+                        #unwrap
+                      </a></li>
+                      
+                      <li><a
+                        href='#optionunwrapor'
+                        class='regular pre-open'>
+                        #unwrapOr
+                      </a></li>
+                      
+                      <li><a
+                        href='#optionunwraporelse'
+                        class='regular pre-open'>
+                        #unwrapOrElse
+                      </a></li>
+                      
+                      <li><a
+                        href='#optionmap'
+                        class='regular pre-open'>
+                        #map
+                      </a></li>
+                      
+                      <li><a
+                        href='#optionthen'
+                        class='regular pre-open'>
+                        #then
+                      </a></li>
+                      
+                      <li><a
+                        href='#optionor'
+                        class='regular pre-open'>
+                        #or
+                      </a></li>
+                      
+                      <li><a
+                        href='#optionorelse'
+                        class='regular pre-open'>
+                        #orElse
+                      </a></li>
+                      
+                      <li><a
+                        href='#optionissome'
+                        class='regular pre-open'>
+                        #isSome
+                      </a></li>
+                      
+                      <li><a
+                        href='#optionisnone'
+                        class='regular pre-open'>
+                        #isNone
+                      </a></li>
+                      
+                    </ul>
+                  
+                  
+                  
+                </div>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#result'
+                  class=" toggle-sibling">
+                  Result
+                  <span class='icon'>▸</span>
+                </a>
+                
+                <div class='toggle-target display-none'>
+                  
+                  
+                    <ul class='list-reset py1-ul pl1'>
+                      <li class='h5'><span>Instance members</span></li>
+                      
+                      <li><a
+                        href='#resultunwrap'
+                        class='regular pre-open'>
+                        #unwrap
+                      </a></li>
+                      
+                      <li><a
+                        href='#resultunwrapor'
+                        class='regular pre-open'>
+                        #unwrapOr
+                      </a></li>
+                      
+                      <li><a
+                        href='#resultunwraporelse'
+                        class='regular pre-open'>
+                        #unwrapOrElse
+                      </a></li>
+                      
+                      <li><a
+                        href='#resultok'
+                        class='regular pre-open'>
+                        #ok
+                      </a></li>
+                      
+                      <li><a
+                        href='#resulterr'
+                        class='regular pre-open'>
+                        #err
+                      </a></li>
+                      
+                      <li><a
+                        href='#resultmap'
+                        class='regular pre-open'>
+                        #map
+                      </a></li>
+                      
+                      <li><a
+                        href='#resultmaperr'
+                        class='regular pre-open'>
+                        #mapErr
+                      </a></li>
+                      
+                      <li><a
+                        href='#resultthen'
+                        class='regular pre-open'>
+                        #then
+                      </a></li>
+                      
+                      <li><a
+                        href='#resultor'
+                        class='regular pre-open'>
+                        #or
+                      </a></li>
+                      
+                      <li><a
+                        href='#resultorelse'
+                        class='regular pre-open'>
+                        #orElse
+                      </a></li>
+                      
+                      <li><a
+                        href='#resultiserror'
+                        class='regular pre-open'>
+                        #isError
+                      </a></li>
+                      
+                      <li><a
+                        href='#resultisvalue'
+                        class='regular pre-open'>
+                        #isValue
+                      </a></li>
+                      
+                    </ul>
+                  
+                  
+                  
+                </div>
+                
+                </li>
+              
             </ul>
           </div>
           <div class='mt1 h6 quiet'>
@@ -34,6 +221,1815 @@
         </div>
       </div>
       <div id='split-right' class='relative overflow-auto height-viewport-100'>
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='option'>
+      Option
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LaSpruca/quite-possibly/blob/1ccdee85bff9be67fb9227044c39f9bc2a0d03c8/src/option.ts#L11-L82'>
+      <span>src/option.ts</span>
+      </a>
+    
+  </div>
+  
+
+  <p>A wrapper that warps a value of type T, that can either be a value or some, or none</p>
+
+    <div class='pre p1 fill-light mt0'>new Option()</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Static Members</div>
+    <div class="clearfix">
+  
+    <div class='border-bottom' id='optionfrom'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>from(value?)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LaSpruca/quite-possibly/blob/1ccdee85bff9be67fb9227044c39f9bc2a0d03c8/src/option.ts#L17-L23'>
+      <span>src/option.ts</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Wrap a JS value in and Option</p>
+
+    <div class='pre p1 fill-light mt0'>from(value: (T | null)?): <a href="#option">Option</a>&#x3C;T></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>value</span> <code class='quiet'>((T | null)?)</code>
+	    That value that you want to wrap in an option
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#option">Option</a>&#x3C;T></code>:
+        The option representation of the value
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='optionnone'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>none()</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LaSpruca/quite-possibly/blob/1ccdee85bff9be67fb9227044c39f9bc2a0d03c8/src/option.ts#L29-L31'>
+      <span>src/option.ts</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Construct a new None</p>
+
+    <div class='pre p1 fill-light mt0'>none(): <a href="#option">Option</a>&#x3C;T></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#option">Option</a>&#x3C;T></code>:
+        A new none
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+</div>
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Instance Members</div>
+    <div class="clearfix">
+  
+    <div class='border-bottom' id='optionunwrap'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>unwrap()</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LaSpruca/quite-possibly/blob/1ccdee85bff9be67fb9227044c39f9bc2a0d03c8/src/option.ts#L37-L37'>
+      <span>src/option.ts</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Get access to the underling value</p>
+
+    <div class='pre p1 fill-light mt0'>unwrap(): T</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>T</code>
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Throws</div>
+    <ul>
+      
+        <li>NoneValueError: if the options is none
+</li>
+      
+    </ul>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='optionunwrapor'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>unwrapOr(defaultValue)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LaSpruca/quite-possibly/blob/1ccdee85bff9be67fb9227044c39f9bc2a0d03c8/src/option.ts#L42-L42'>
+      <span>src/option.ts</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Safely unwrap an option, with a default value</p>
+
+    <div class='pre p1 fill-light mt0'>unwrapOr(defaultValue: T): T</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>defaultValue</span> <code class='quiet'>(T)</code>
+	    The value to be used in the case that the option is None, if this is expensive, please use unwrapOrElse for lazy computation
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>T</code>
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='optionunwraporelse'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>unwrapOrElse(defaultFn)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LaSpruca/quite-possibly/blob/1ccdee85bff9be67fb9227044c39f9bc2a0d03c8/src/option.ts#L47-L47'>
+      <span>src/option.ts</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Safely unwrap an option, with a function that returns the default value</p>
+
+    <div class='pre p1 fill-light mt0'>unwrapOrElse(defaultFn: function (): T): T</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>defaultFn</span> <code class='quiet'>(function (): T)</code>
+	    A function to be called incas of None
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>T</code>
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='optionmap'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>map(fn)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LaSpruca/quite-possibly/blob/1ccdee85bff9be67fb9227044c39f9bc2a0d03c8/src/option.ts#L53-L53'>
+      <span>src/option.ts</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Map a some value to a different some value</p>
+
+    <div class='pre p1 fill-light mt0'>map(fn: function (val: T): U): <a href="#option">Option</a>&#x3C;U></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>fn</span> <code class='quiet'>(function (val: T): U)</code>
+	    The function to be called
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#option">Option</a>&#x3C;U></code>
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='optionthen'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>then(fn)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LaSpruca/quite-possibly/blob/1ccdee85bff9be67fb9227044c39f9bc2a0d03c8/src/option.ts#L59-L59'>
+      <span>src/option.ts</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Map a some value to either a None or a new Some value that might have a different type</p>
+
+    <div class='pre p1 fill-light mt0'>then(fn: function (val: T): <a href="#option">Option</a>&#x3C;U>): <a href="#option">Option</a>&#x3C;U></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>fn</span> <code class='quiet'>(function (val: T): <a href="#option">Option</a>&#x3C;U>)</code>
+	    The mapping function
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#option">Option</a>&#x3C;U></code>
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='optionor'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>or(value, fn)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LaSpruca/quite-possibly/blob/1ccdee85bff9be67fb9227044c39f9bc2a0d03c8/src/option.ts#L65-L65'>
+      <span>src/option.ts</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Map a None to either a None or a new Some value that might have a different type</p>
+
+    <div class='pre p1 fill-light mt0'>or(value: <a href="#option">Option</a>&#x3C;T>, fn: any): <a href="#option">Option</a>&#x3C;T></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>value</span> <code class='quiet'>(<a href="#option">Option</a>&#x3C;T>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>fn</span> <code class='quiet'>(any)</code>
+	    The mapping function
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#option">Option</a>&#x3C;T></code>
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='optionorelse'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>orElse(fn)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LaSpruca/quite-possibly/blob/1ccdee85bff9be67fb9227044c39f9bc2a0d03c8/src/option.ts#L71-L71'>
+      <span>src/option.ts</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Map a None to either a None or a new Some value that might have a different type</p>
+
+    <div class='pre p1 fill-light mt0'>orElse(fn: function (): <a href="#option">Option</a>&#x3C;T>): <a href="#option">Option</a>&#x3C;T></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>fn</span> <code class='quiet'>(function (): <a href="#option">Option</a>&#x3C;T>)</code>
+	    The mapping function
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#option">Option</a>&#x3C;T></code>
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='optionissome'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>isSome()</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LaSpruca/quite-possibly/blob/1ccdee85bff9be67fb9227044c39f9bc2a0d03c8/src/option.ts#L76-L76'>
+      <span>src/option.ts</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Returns true if is some</p>
+
+    <div class='pre p1 fill-light mt0'>isSome(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></code>
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='optionisnone'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>isNone()</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LaSpruca/quite-possibly/blob/1ccdee85bff9be67fb9227044c39f9bc2a0d03c8/src/option.ts#L81-L81'>
+      <span>src/option.ts</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Returns true if is none</p>
+
+    <div class='pre p1 fill-light mt0'>isNone(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></code>
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+</div>
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='result'>
+      Result
+    </h3>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LaSpruca/quite-possibly/blob/1ccdee85bff9be67fb9227044c39f9bc2a0d03c8/src/result.ts#L6-L90'>
+      <span>src/result.ts</span>
+      </a>
+    
+  </div>
+  
+
+  <p>A wrapper that represents either a value of type T or an error of type E</p>
+
+    <div class='pre p1 fill-light mt0'>new Result()</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Instance Members</div>
+    <div class="clearfix">
+  
+    <div class='border-bottom' id='resultunwrap'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>unwrap()</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LaSpruca/quite-possibly/blob/1ccdee85bff9be67fb9227044c39f9bc2a0d03c8/src/result.ts#L27-L27'>
+      <span>src/result.ts</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Unwrap the underling result.</p>
+
+    <div class='pre p1 fill-light mt0'>unwrap(): T</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>T</code>
+    
+  
+
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Throws</div>
+    <ul>
+      
+        <li>any: The error value if present
+</li>
+      
+    </ul>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='resultunwrapor'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>unwrapOr(value)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LaSpruca/quite-possibly/blob/1ccdee85bff9be67fb9227044c39f9bc2a0d03c8/src/result.ts#L33-L33'>
+      <span>src/result.ts</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Attempt to get the underling value, but if there is an error, return the default value. If this computation is expensive, use unwrapOrElse for lazy evaluation instead</p>
+
+    <div class='pre p1 fill-light mt0'>unwrapOr(value: T): T</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>value</span> <code class='quiet'>(T)</code>
+	    The default value to use incas of an error
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>T</code>
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='resultunwraporelse'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>unwrapOrElse(fn)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LaSpruca/quite-possibly/blob/1ccdee85bff9be67fb9227044c39f9bc2a0d03c8/src/result.ts#L39-L39'>
+      <span>src/result.ts</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Attempt to get the underling value, but if there is an error, return the error</p>
+
+    <div class='pre p1 fill-light mt0'>unwrapOrElse(fn: function (error: E): T): T</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>fn</span> <code class='quiet'>(function (error: E): T)</code>
+	    The function to call to get the value, error is the default value
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>T</code>
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='resultok'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>ok()</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LaSpruca/quite-possibly/blob/1ccdee85bff9be67fb9227044c39f9bc2a0d03c8/src/result.ts#L44-L44'>
+      <span>src/result.ts</span>
+      </a>
+    
+  </div>
+  
+
+  <p>If there is a value, return Some, if there is an error return None</p>
+
+    <div class='pre p1 fill-light mt0'>ok(): <a href="#option">Option</a>&#x3C;T></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#option">Option</a>&#x3C;T></code>
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='resulterr'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>err()</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LaSpruca/quite-possibly/blob/1ccdee85bff9be67fb9227044c39f9bc2a0d03c8/src/result.ts#L49-L49'>
+      <span>src/result.ts</span>
+      </a>
+    
+  </div>
+  
+
+  <p>If there is a error, return Some, if there is an value return None</p>
+
+    <div class='pre p1 fill-light mt0'>err(): <a href="#option">Option</a>&#x3C;E></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#option">Option</a>&#x3C;E></code>
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='resultmap'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>map(fn)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LaSpruca/quite-possibly/blob/1ccdee85bff9be67fb9227044c39f9bc2a0d03c8/src/result.ts#L55-L55'>
+      <span>src/result.ts</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Map a value to a another value</p>
+
+    <div class='pre p1 fill-light mt0'>map(fn: function (value: T): U): <a href="#result">Result</a>&#x3C;U, E></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>fn</span> <code class='quiet'>(function (value: T): U)</code>
+	    The function to transform a value of type T to a value of type U
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#result">Result</a>&#x3C;U, E></code>
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='resultmaperr'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>mapErr(fn)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LaSpruca/quite-possibly/blob/1ccdee85bff9be67fb9227044c39f9bc2a0d03c8/src/result.ts#L61-L61'>
+      <span>src/result.ts</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Map an error to another error</p>
+
+    <div class='pre p1 fill-light mt0'>mapErr(fn: function (error: E): U): <a href="#result">Result</a>&#x3C;T, U></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>fn</span> <code class='quiet'>(function (error: E): U)</code>
+	    The function to transform an error of type E to a error of type U
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#result">Result</a>&#x3C;T, U></code>
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='resultthen'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>then(fn)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LaSpruca/quite-possibly/blob/1ccdee85bff9be67fb9227044c39f9bc2a0d03c8/src/result.ts#L67-L67'>
+      <span>src/result.ts</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Map a value to a new result</p>
+
+    <div class='pre p1 fill-light mt0'>then(fn: function (value: T): <a href="#result">Result</a>&#x3C;U, E>): <a href="#result">Result</a>&#x3C;U, E></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>fn</span> <code class='quiet'>(function (value: T): <a href="#result">Result</a>&#x3C;U, E>)</code>
+	    The function to transform a value of type T to a result of type Result&#x3C;U, E>
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#result">Result</a>&#x3C;U, E></code>
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='resultor'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>or(value, fn)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LaSpruca/quite-possibly/blob/1ccdee85bff9be67fb9227044c39f9bc2a0d03c8/src/result.ts#L73-L73'>
+      <span>src/result.ts</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Map an error to a new result</p>
+
+    <div class='pre p1 fill-light mt0'>or(value: <a href="#result">Result</a>&#x3C;T, U>, fn: any): <a href="#result">Result</a>&#x3C;T, U></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>value</span> <code class='quiet'>(<a href="#result">Result</a>&#x3C;T, U>)</code>
+	    
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>fn</span> <code class='quiet'>(any)</code>
+	    The function to transform a value of type T to a result of type Result&#x3C;U, E>
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#result">Result</a>&#x3C;T, U></code>
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='resultorelse'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>orElse(fn)</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LaSpruca/quite-possibly/blob/1ccdee85bff9be67fb9227044c39f9bc2a0d03c8/src/result.ts#L79-L79'>
+      <span>src/result.ts</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Map an error to a new result</p>
+
+    <div class='pre p1 fill-light mt0'>orElse(fn: function (error: E): <a href="#result">Result</a>&#x3C;T, U>): <a href="#result">Result</a>&#x3C;T, U></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>fn</span> <code class='quiet'>(function (error: E): <a href="#result">Result</a>&#x3C;T, U>)</code>
+	    The function to transform a value of type T to a result of type Result&#x3C;U, E>
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="#result">Result</a>&#x3C;T, U></code>
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='resultiserror'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>isError()</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LaSpruca/quite-possibly/blob/1ccdee85bff9be67fb9227044c39f9bc2a0d03c8/src/result.ts#L84-L84'>
+      <span>src/result.ts</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Returns weather or not the object is an error</p>
+
+    <div class='pre p1 fill-light mt0'>isError(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></code>
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+    <div class='border-bottom' id='resultisvalue'>
+      <div class="clearfix small pointer toggle-sibling">
+        <div class="py1 contain">
+            <a class='icon pin-right py1 dark-link caret-right'>▸</a>
+            <span class='code strong strong truncate'>isValue()</span>
+        </div>
+      </div>
+      <div class="clearfix display-none toggle-target">
+        <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    
+      <a class='fr fill-darken0 round round pad1x quiet h5' href='https://github.com/LaSpruca/quite-possibly/blob/1ccdee85bff9be67fb9227044c39f9bc2a0d03c8/src/result.ts#L89-L89'>
+      <span>src/result.ts</span>
+      </a>
+    
+  </div>
+  
+
+  <p>Returns weather or not the object is a value</p>
+
+    <div class='pre p1 fill-light mt0'>isValue(): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></code>
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+      </div>
+    </div>
+  
+</div>
+
+  
+
+  
+
+  
+</section>
+
+          
         
       </div>
     </div>
