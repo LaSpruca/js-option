@@ -2,11 +2,11 @@ import {
   assertEquals,
   assertThrows,
 } from "https://deno.land/std@0.168.0/testing/asserts.ts";
-import { Some, None, type Option } from "./options.ts";
+import { Option } from "./options.ts";
 
 Deno.test(function testUnwrap() {
-  const someVal: Option<string> = new Some("Hello world");
-  const noneVal: Option<string> = new None();
+  const someVal = Option.from("Hello world");
+  const noneVal = Option.none<string>();
 
   // Raw unwraps
   assertEquals(someVal.unwrap(), "Hello world");
@@ -22,34 +22,34 @@ Deno.test(function testUnwrap() {
 });
 
 Deno.test(function testMap() {
-  const someVal: Option<string> = new Some("Hello world");
+  const someVal = Option.from("Hello world");
 
   assertEquals(someVal.map((f) => f.length).unwrap(), 11);
 
-  const noneVal: Option<string> = new None();
+  const noneVal = Option.none<string>();
 
   assertThrows(noneVal.map((f) => f.length).unwrap);
 });
 
 Deno.test(function testOr() {
-  const someVal: Option<string> = new Some("Hello world");
-  const goodbyeWorld: Option<string> = new Some("Goodbye world");
-  const noneVal: Option<string> = new None();
+  const someVal = Option.from("Hello world");
+  const goodbyeWorld = Option.from("Goodbye world");
+  const noneVal = Option.none<string>();
 
   assertEquals(someVal.or(goodbyeWorld).unwrap(), "Hello world");
   assertEquals(noneVal.or(goodbyeWorld).unwrap(), "Goodbye world");
-  assertThrows(noneVal.or(new None()).unwrap);
+  assertThrows(noneVal.or(Option.none()).unwrap);
 
   assertEquals(someVal.orElse(() => goodbyeWorld).unwrap(), "Hello world");
   assertEquals(noneVal.orElse(() => goodbyeWorld).unwrap(), "Goodbye world");
-  assertThrows(noneVal.orElse(() => new None()).unwrap);
+  assertThrows(noneVal.orElse(() => Option.none()).unwrap);
 });
 
 Deno.test(function testThen() {
-  const someVal: Option<string> = new Some("Hello world");
-  const goodbyeWorld: Option<string> = new Some("Goodbye world");
-  const noneVal: Option<string> = new None();
-  const fn = (x: string) => (x == "Hello world" ? goodbyeWorld : new None());
+  const someVal = Option.from("Hello world");
+  const goodbyeWorld = Option.from("Goodbye world");
+  const noneVal = Option.none<string>();
+  const fn = (x: string) => (x == "Hello world" ? goodbyeWorld : Option.none());
 
   assertEquals(someVal.then(fn).unwrap(), "Goodbye world");
   assertThrows(goodbyeWorld.then(fn).unwrap);

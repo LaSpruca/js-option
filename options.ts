@@ -7,6 +7,27 @@ export class NoneValueError extends Error {
 
 export abstract class Option<T> {
   /**
+   * Wrap a JS value in and Option
+   * @param value That value that you want to wrap in an option
+   * @returns The option representation of the value
+   */
+  static from<T>(value?: T | null): Option<T> {
+    if (value) {
+      return new Some(value);
+    } else {
+      return new None();
+    }
+  }
+
+  /**
+   * Construct a new None
+   * @returns A new none
+   */
+  static none<T>(): Option<T> {
+    return new None();
+  }
+
+  /**
    * Get access to the underling value
    * @throws {NoneValueError} if the options is none
    */
@@ -57,7 +78,7 @@ export abstract class Option<T> {
   abstract isNone(): boolean;
 }
 
-export class Some<T> extends Option<T> {
+class Some<T> extends Option<T> {
   private value: T;
   constructor(value: T) {
     super();
@@ -101,7 +122,7 @@ export class Some<T> extends Option<T> {
   }
 }
 
-export class None<T> extends Option<T> {
+class None<T> extends Option<T> {
   constructor() {
     super();
   }
