@@ -1,2 +1,2 @@
-export { Option } from "./src/options.ts";
-export { Result } from "./src/result.ts";
+export * from "./src/option";
+export * from "./src/result";

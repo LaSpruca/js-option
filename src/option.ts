@@ -130,10 +130,8 @@ class None<T> extends Option<T> {
     super();
   }
 
-  unwrap() {
+  unwrap(): T {
     throw new NoneValueError();
-    // deno-lint-ignore no-unreachable
-    return null as unknown as T;
   }
 
   unwrapOr(noneCase: T): T {
