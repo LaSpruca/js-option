@@ -1,9 +1,10 @@
 {
   "name": "quite-possibly",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "type": "module",
   "homepage": "https://laspruca.github.io/quite-possibly/",
   "files": [
     "lib"
