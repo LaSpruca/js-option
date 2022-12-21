@@ -1,4 +1,4 @@
-# js-option
+# quite-possibly
 
 The idea for this library was taken straight from Rust's result and option types. The provided types are accessible through the `Result` and `Option` types, with functions for creating the respective variants.
 
@@ -7,7 +7,7 @@ The idea for this library was taken straight from Rust's result and option types
 Options are used to wrap null values, and can be used like so
 
 ```ts
-import { Option } from "js-options";
+import { Option } from "quite-possibly";
 
 let someValue = null;
 let option = Option.from(someValue);
@@ -26,7 +26,7 @@ option
 Much like options, results can be used like the following:
 
 ```ts
-import { Result } from "js-option";
+import { Result } from "quite-possibly";
 
 const throws = () => {
   // Image some code
