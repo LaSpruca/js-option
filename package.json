@@ -2,7 +2,7 @@
   "name": "quite-possibly",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "homepage": "https://laspruca.github.io/quite-possibly/",
   "files": [
