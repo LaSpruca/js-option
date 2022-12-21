@@ -4,6 +4,7 @@
   "description": "",
   "main": "dist/index.js",
   "types": "lib/index.d.ts",
+  "homepage": "https://laspruca.github.io/quite-possibly/",
   "files": [
     "lib"
   ],
