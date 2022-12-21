@@ -2,7 +2,7 @@ import {
   assertEquals,
   assertThrows,
 } from "https://deno.land/std@0.168.0/testing/asserts.ts";
-import { Option } from "./options.ts";
+import { Option } from "../mod.ts";
 
 Deno.test(function testUnwrap() {
   const someVal = Option.from("Hello world");

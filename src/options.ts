@@ -5,6 +5,9 @@ export class NoneValueError extends Error {
   }
 }
 
+/**
+ * A wrapper that warps a value of type T, that can either be a value or some, or none
+ */
 export abstract class Option<T> {
   /**
    * Wrap a JS value in and Option
