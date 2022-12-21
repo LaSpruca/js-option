@@ -2,7 +2,14 @@ import { Option } from "../src/index";
 
 test("Test unwrap", () => {
   const someVal = Option.from("Hello world");
-  const noneVal = Option.none<string>();
+  const noneVal = Option.from<string>();
+
+  // Is checks
+  expect(someVal.isSome()).toBeTruthy();
+  expect(someVal.isNone()).toBeFalsy();
+
+  expect(noneVal.isNone()).toBeTruthy();
+  expect(noneVal.isSome()).toBeFalsy();
 
   // Raw unwraps
   expect(someVal.unwrap()).toBe("Hello world");
@@ -13,8 +20,8 @@ test("Test unwrap", () => {
   expect(noneVal.unwrapOr("Goodbye world")).toBe("Goodbye world");
 
   // Unwrap or else
-  expect(someVal.unwrapOr("Goodbye world")).toBe("Hello world");
-  expect(noneVal.unwrapOr("Goodbye world")).toBe("Goodbye world");
+  expect(someVal.unwrapOrElse(() => "Goodbye world")).toBe("Hello world");
+  expect(noneVal.unwrapOrElse(() => "Goodbye world")).toBe("Goodbye world");
 });
 
 test("Test map", () => {

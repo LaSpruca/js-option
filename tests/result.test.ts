@@ -6,6 +6,18 @@ test("Test unwrapping", () => {
 
   expect(ok.unwrap()).toBe("Ok");
   expect(() => err.unwrap()).toThrow("Err");
+
+  expect(ok.unwrapOr("Err")).toBe("Ok");
+  expect(err.unwrapOr("Err")).toBe("Err");
+
+  expect(ok.unwrapOrElse(() => "Err")).toBe("Ok");
+  expect(err.unwrapOrElse(() => "Err")).toBe("Err");
+
+  expect(ok.isError()).toBeFalsy();
+  expect(ok.isValue()).toBeTruthy();
+
+  expect(err.isError()).toBeTruthy();
+  expect(err.isValue()).toBeFalsy();
 });
 
 test("Test function wrapping", () => {
@@ -14,8 +26,11 @@ test("Test function wrapping", () => {
     throw new Error("Err");
   });
 
-  expect(ok.unwrap()).toBe("Ok");
-  expect(() => err.unwrap()).toThrow("Err");
+  expect(ok.ok().isSome()).toBeTruthy();
+  expect(err.err().isSome()).toBeTruthy();
+
+  expect(ok.err().isSome()).toBeFalsy();
+  expect(err.ok().isSome()).toBeFalsy();
 });
 
 test("Test mapping", () => {
