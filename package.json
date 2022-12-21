@@ -2,19 +2,26 @@
   "name": "quite-possibly",
   "version": "1.0.2",
   "description": "",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
-  "type": "module",
   "homepage": "https://laspruca.github.io/quite-possibly/",
+  "source": "./src/index.ts",
+  "main": "dist/qp.js",
+  "umd:main": "dist/qp.umd.js",
+  "module": "dist/qp.mjs",
+  "exports": {
+    "types": "./dist/qp.d.ts",
+    "require": "./dist/qp.js",
+    "default": "./dist/qp.modern.mjs"
+  },
+  "types": "dist/qp.d.ts",
   "files": [
-    "lib"
+    "dist"
   ],
   "scripts": {
     "test": "jest tests",
     "test:watch": "jest --watch tests",
     "coverage": "jest --coverage",
-    "build": "tsc",
-    "prepublish": "tsc",
+    "prepublish": "rm -rf dist ; microbundle",
+    "build": "microbundle",
     "build:docs": "documentation build src/index.ts -f html -o docs --github --parse-extension ts"
   },
   "repository": {
@@ -35,6 +42,7 @@
     "@types/jest": "^29.2.4",
     "documentation": "^14.0.1",
     "jest": "^29.3.1",
+    "microbundle": "^0.15.1",
     "prettier": "^2.8.1",
     "ts-jest": "^29.0.3",
     "typescript": "^4.9.4"
