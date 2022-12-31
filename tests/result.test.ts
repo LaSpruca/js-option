@@ -1,6 +1,19 @@
-import { Result } from "../src/result";
+import { Result } from "../src";
 
-test("Test unwrapping", () => {
+it("Test wrapping async", () => {
+  const fn = async (input?: unknown) => {
+    if (input instanceof Number) {
+      return input;
+    } else {
+      throw new Error("Hay this ain't right!");
+    }
+  }
+
+  expect(Result.wrapPromise(fn(2))).resolves.toStrictEqual(Result.ok(2));
+  expect(Result.wrapPromise(fn)).resolves.toStrictEqual(Result.error(new Error("Hay this ain't right")));
+});
+
+it("Test unwrapping", () => {
   const ok = Result.ok("Ok");
   const err = Result.error(new Error("Err"));
 
@@ -20,7 +33,7 @@ test("Test unwrapping", () => {
   expect(err.isValue()).toBeFalsy();
 });
 
-test("Test function wrapping", () => {
+it("Test function wrapping", () => {
   const ok = Result.wrap(() => "Ok");
   const err = Result.wrap(() => {
     throw new Error("Err");
@@ -33,7 +46,7 @@ test("Test function wrapping", () => {
   expect(err.ok().isSome()).toBeFalsy();
 });
 
-test("Test mapping", () => {
+it("Test mapping", () => {
   const ok = Result.ok<string, string>("Ok");
   const err = Result.error<string, string>("Err");
 
@@ -44,7 +57,7 @@ test("Test mapping", () => {
   expect(err.mapErr((k) => k.length)).toStrictEqual(Result.error(3));
 });
 
-test("Test then", () => {
+it("Test then", () => {
   const ok = Result.ok<string, string>("Ok");
   const err = Result.error<string, string>("Err");
 
@@ -54,7 +67,7 @@ test("Test then", () => {
   );
 });
 
-test("Test or", () => {
+it("Test or", () => {
   const ok = Result.ok<string, string>("Ok");
   const err = Result.error<string, string>("Err");
 
@@ -62,7 +75,7 @@ test("Test or", () => {
   expect(err.or(Result.ok("Yep"))).toStrictEqual(Result.ok("Yep"));
 });
 
-test("Test orElse", () => {
+it("Test orElse", () => {
   const ok = Result.ok<string, string>("Ok");
   const err = Result.error<string, string>("Err");
   expect(ok.orElse((ex) => Result.ok(ex))).toStrictEqual(Result.ok("Ok"));

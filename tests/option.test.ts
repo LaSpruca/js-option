@@ -1,6 +1,6 @@
 import { Option } from "../src/index";
 
-test("Test unwrap", () => {
+it("Test unwrap", () => {
   const someVal = Option.from("Hello world");
   const noneVal = Option.from<string>();
 
@@ -24,7 +24,7 @@ test("Test unwrap", () => {
   expect(noneVal.unwrapOrElse(() => "Goodbye world")).toBe("Goodbye world");
 });
 
-test("Test map", () => {
+it("Test map", () => {
   const someVal = Option.from("Hello world");
 
   expect(someVal.map((f) => f.length).unwrap()).toBe(11);
@@ -34,7 +34,7 @@ test("Test map", () => {
   expect(noneVal.map((f) => f.length).unwrap).toThrow();
 });
 
-test("Test or", () => {
+it("Test or", () => {
   const someVal = Option.from("Hello world");
   const goodbyeWorld = Option.from("Goodbye world");
   const noneVal = Option.none<string>();
@@ -48,7 +48,7 @@ test("Test or", () => {
   expect(noneVal.orElse(() => Option.none()).unwrap).toThrow();
 });
 
-test("Test then", () => {
+it("Test then", () => {
   const someVal = Option.from("Hello world");
   const goodbyeWorld = Option.from("Goodbye world");
   const noneVal = Option.none<string>();

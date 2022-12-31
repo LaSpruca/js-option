@@ -21,6 +21,18 @@ export abstract class Result<T, E> {
   }
 
   /**
+   * Like the wrap function but takes an async function or a promise as input and returns a Result wrapped in a promise
+   * @param fn The promise or async function you want to wrap
+   */
+  static async wrapPromise<T, E>(fn: (() => Promise<T>) | Promise<T>): Promise<Result<T, E>> {
+    try {
+      return new Ok(await ((fn instanceof Function) ? fn() : fn));
+    } catch (ex) {
+      return Promise.resolve(new Err(ex));
+    }
+  }
+
+  /**
    * Unwrap the underling result.
    * @throws The error value if present
    */
