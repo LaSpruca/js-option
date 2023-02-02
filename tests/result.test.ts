@@ -1,5 +1,19 @@
 import { Result } from "../src";
 
+it("Test wrapping function", () => {
+  const fn = Result.createFnWrapper<Error>()((input: number) => {
+    if (input == 69) {
+      return "Nice";
+    }
+    throw new Error("Not a funny number");
+  });
+
+  expect(fn(69)).toStrictEqual(Result.ok("Nice"));
+  expect(fn(2)).toStrictEqual(
+    Result.error(new Error("Not a funny number"))
+  );
+});
+
 it("Test wrapping async", () => {
   const fn = async (input?: unknown) => {
     if (input instanceof Number) {
@@ -7,10 +21,12 @@ it("Test wrapping async", () => {
     } else {
       throw new Error("Hay this ain't right!");
     }
-  }
+  };
 
   expect(Result.wrapPromise(fn(2))).resolves.toStrictEqual(Result.ok(2));
-  expect(Result.wrapPromise(fn)).resolves.toStrictEqual(Result.error(new Error("Hay this ain't right")));
+  expect(Result.wrapPromise(fn)).resolves.toStrictEqual(
+    Result.error(new Error("Hay this ain't right"))
+  );
 });
 
 it("Test unwrapping", () => {
